@@ -30,21 +30,21 @@ class _MystatefulWidgeState extends State<MyStatefulWidget> {
   int _selectedIndex = 0;
   static const List<Widget> _widget = <Widget>[
     Text(
-      '首页',
+      'Index0',
       style: TextStyle(
         fontSize: 50,
         color: Colors.black,
       ),
     ),
       Text(
-      '任务',
+      'Index1',
       style: TextStyle(
         fontSize: 50,
         color: Colors.black,
       ),
     ),
     Text(
-      '我的',
+      'Index2',
       style: TextStyle(
         fontSize: 50,
         color: Colors.black,
@@ -56,7 +56,7 @@ class _MystatefulWidgeState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('猫回收'),
+        title: Text('Training'),
       ),
       body: Center(
         child: _widget.elementAt(_selectedIndex),
@@ -65,15 +65,15 @@ class _MystatefulWidgeState extends State<MyStatefulWidget> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            title: Text('首页'),
+            title: Text('Index0'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.contacts),
-            title: Text('任务'),
+            title: Text('Index1'),
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.build),
-            title: Text('我的'),
+            title: Text('Index2'),
           ),
         ],
         currentIndex: _selectedIndex,
