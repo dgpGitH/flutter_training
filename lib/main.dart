@@ -5,7 +5,7 @@ void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
   static const String _title = 'Flutter Code Sample';
 
-  @override 
+  @override
   Widget build(BuildContext context) {
     return new MaterialApp(
       theme: ThemeData(
@@ -22,8 +22,8 @@ class MyApp extends StatelessWidget {
 class MyStatefulWidget extends StatefulWidget {
   MyStatefulWidget({Key key}) : super(key: key);
 
-  @override 
-  _MystatefulWidgeState createState() => _MystatefulWidgeState();//1
+  @override
+  _MystatefulWidgeState createState() => _MystatefulWidgeState(); //1
 }
 
 class _MystatefulWidgeState extends State<MyStatefulWidget> {
@@ -36,7 +36,7 @@ class _MystatefulWidgeState extends State<MyStatefulWidget> {
         color: Colors.black,
       ),
     ),
-      Text(
+    Text(
       'Index1',
       style: TextStyle(
         fontSize: 50,
@@ -52,7 +52,7 @@ class _MystatefulWidgeState extends State<MyStatefulWidget> {
     ),
   ];
 
-  @override 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -80,8 +80,9 @@ class _MystatefulWidgeState extends State<MyStatefulWidget> {
         selectedItemColor: Color(0xFFFEC300),
         onTap: _onItemTapped,
       ),
-      );
+    );
   }
+
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
